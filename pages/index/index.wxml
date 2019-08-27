@@ -1,0 +1,5 @@
+<!--pages/index/index.wxml-->
+<import src="/template/topics/topics.wxml"/>
+<view class="page-container">
+ <template is="topics" data="{{topics}}"/>
+</view>

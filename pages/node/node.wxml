@@ -1,0 +1,11 @@
+<!--pages/node/node.wxml-->
+<view class="page-container">
+  <view class="node-title">
+    <view>选择你的兴趣</view>
+    <view>发现生活中的线索</view>
+  </view>
+  <view class="node-description">根据你的兴趣，为你筛选来自1000多个分类的好内容</view>
+  <view class="node-container">
+    <navigator wx:for="{{nodes}}" wx:key="{{item.id}}" class="node-item" hover-class="node-item_hover" url="/pages/topics/topics?id={{item.id}}">{{item.name}}</navigator>
+  </view>
+</view>

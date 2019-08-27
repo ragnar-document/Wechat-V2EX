@@ -1,0 +1,21 @@
+/* pages/show/show.wxss */
+.page-container{
+  background-color: #f5f5f5;
+}
+.topic-container{
+  padding: 30rpx;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+.topic-userInfo{
+  display: flex;
+  margin-bottom: 10px;
+}
+.topic-userInfo .topic-userInfo-avatar{
+  flex: none;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 4px;
+  margin-right: 8px;
+  background-color: #f5f5f5;
+}

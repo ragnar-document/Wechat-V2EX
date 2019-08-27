@@ -1,0 +1,19 @@
+<template name="topics">
+  <navigator class="topics-item" wx:for="{{topics}}"  url="/pages/show/show?id={{item.id}}" wx:key="unique">
+    <image class="topics-avatar" src="{{item.member.avatar_normal}}"></image>
+    <view class="topics-content">
+      <view class="topics-username">{{item.member.username}}</view>
+      <view class="topics-title">{{item.title}}</view>
+    </view>
+  </navigator>
+</template>
+
+<template name="replies">
+  <navigator class="topics-item" wx:for="{{replies}}"  url="/pages/show/show?id={{item.id}}" wx:key="unique">
+    <image class="topics-avatar" src="{{item.member.avatar_normal}}"></image>
+    <view class="topics-content">
+      <view class="topics-username">{{item.member.username}}</view>
+      <view class="topics-title">{{item.content}}</view>
+    </view>
+  </navigator>
+</template>

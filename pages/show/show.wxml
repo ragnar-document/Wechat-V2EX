@@ -1,0 +1,15 @@
+<!--pages/show/show.wxml-->
+<import src="/template/topics/topics.wxml"/>
+<view class="page-container">
+  <view class="topic-container">
+    <view class="topic-userInfo">
+      <image class="topic-userInfo-avatar" src="{{topics.member.avatar_normal}}"></image>
+      <view class="topic-userInfo-username">{{topics.member.username}}</view>
+    </view>
+    <view class="topic-content">
+      <view class="topic-title">{{topics.title}}</view>
+      <view class="topic-description">{{topics.content}}</view>
+    </view>
+  </view>
+  <template is="replies" data="{{replies}}"/>
+</view>
